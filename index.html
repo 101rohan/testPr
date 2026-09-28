@@ -1,11 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acme — a simple, modern landing page template. Ship your next idea faster.">
+  <title>Acme — Ship your next idea faster</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>alsjha </p>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Acme home">Acme<span>.</span></a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="#cta">Get started</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h16M3 11h16M3 16h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= Hero ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="hero-badge"><span class="dot" aria-hidden="true"></span> New: version 2.0 is live</p>
+        <h1 id="hero-title">Ship your next idea <span class="accent-text">faster</span></h1>
+        <p class="hero-sub">
+          Acme is a minimal starter kit for landing pages. Clean sections,
+          responsive by default, and zero dependencies — just open and edit.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="#cta">Start free trial</a>
+          <a class="btn btn-secondary btn-large" href="#features">See features</a>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="browser-mock">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="mock-body">
+              <div class="mock-sidebar"></div>
+              <div class="mock-cards">
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+                <div class="mock-bar-wide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Logos ================= -->
+    <div class="logos">
+      <div class="container">
+        <p>Trusted by teams at</p>
+        <div class="logo-row" aria-label="Example customer names">
+          <span>Nova</span>
+          <span>Hexlab</span>
+          <span>Quantia</span>
+          <span>Brightly</span>
+          <span>Koda</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Features ================= -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Features</span>
+          <h2 id="features-title">Everything you need, nothing you don't</h2>
+          <p>Purpose-built sections with sensible defaults. Replace the placeholder copy with your own.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </span>
+            <h3>Blazing fast</h3>
+            <p>No frameworks, no build step. A few kilobytes of HTML, CSS, and JS that load instantly.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+            </span>
+            <h3>Responsive by default</h3>
+            <p>Mobile-first layout that adapts cleanly from phones to wide desktop screens.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <h3>Accessible</h3>
+            <p>Semantic markup, visible focus states, and reduced-motion support out of the box.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </span>
+            <h3>Easy to customize</h3>
+            <p>One stylesheet with CSS variables — change the accent color or spacing in seconds.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </span>
+            <h3>FAQ &amp; pricing included</h3>
+            <p>Conversion-ready sections — pricing tiers, FAQ accordion, and a final call to action.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </span>
+            <h3>Yours to keep</h3>
+            <p>Plain files you own completely. Edit in any editor, host anywhere, no lock-in.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= How it works ================= -->
+    <section class="steps" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2 id="how-title">Live in three steps</h2>
+          <p>From download to deployed in minutes, not days.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step reveal">
+            <h3>1. Make it yours</h3>
+            <p>Edit the copy, swap the accent color in <code>styles.css</code>, and drop in your logo.</p>
+          </div>
+          <div class="step reveal">
+            <h3>2. Add your content</h3>
+            <p>Fill in real testimonials, pricing, and FAQs. Every section is clearly marked.</p>
+          </div>
+          <div class="step reveal">
+            <h3>3. Publish anywhere</h3>
+            <p>Upload the three files to any static host — no build, no server, no fuss.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Testimonial ================= -->
+    <section class="testimonial" aria-label="Customer testimonial">
+      <div class="container">
+        <figure class="reveal">
+          <blockquote>
+            We replaced our bloated site builder with this template and our
+            page load time dropped by 80%. It just works.
+          </blockquote>
+          <figcaption><strong>Jane Doe</strong>Product Lead, Nova</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= Pricing ================= -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2 id="pricing-title">Simple, honest pricing</h2>
+          <p>Start free. Upgrade when it makes sense. Cancel anytime.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price">$0 <small>/ forever</small></p>
+            <p class="plan-desc">For side projects and experiments.</p>
+            <ul>
+              <li>Single landing page</li>
+              <li>Basic sections</li>
+              <li>Community support</li>
+            </ul>
+            <a class="btn btn-secondary" href="#cta">Choose Starter</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <span class="badge-popular">Most popular</span>
+            <p class="plan-name">Pro</p>
+            <p class="plan-price">$19 <small>/ month</small></p>
+            <p class="plan-desc">For growing teams shipping often.</p>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Unlimited pages</li>
+              <li>Priority support</li>
+              <li>Custom domain</li>
+            </ul>
+            <a class="btn btn-light" href="#cta">Choose Pro</a>
+          </article>
+
+          <article class="price-card reveal">
+            <p class="plan-name">Enterprise</p>
+            <p class="plan-price">$99 <small>/ month</small></p>
+            <p class="plan-desc">For companies with custom needs.</p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>SSO &amp; audit logs</li>
+              <li>Dedicated manager</li>
+              <li>SLA guarantee</li>
+            </ul>
+            <a class="btn btn-secondary" href="#cta">Contact sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p>Quick answers to common questions.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Do I need to know how to code?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Basic HTML is enough. Each section is clearly commented, and colors, spacing, and fonts are controlled from CSS variables at the top of <code>styles.css</code>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Can I use this for client work?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Use it for personal projects, client sites, or commercial products — no attribution required.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              How do I put it online?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Because there is no build step, you can drag the folder into Netlify Drop, Vercel, GitHub Pages, or any static host and you're live.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Is there really a free plan?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>This is placeholder pricing for the template demo — replace it with your own plans before publishing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Final CTA ================= -->
+    <section class="cta-band" id="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 id="cta-title">Ready to ship your next idea?</h2>
+          <p>Join thousands of makers who started with this template. Free forever plan, no credit card required.</p>
+          <div class="cta-actions">
+            <a class="btn btn-light btn-large" href="#top">Get started free</a>
+            <a class="btn btn-outline-light btn-large" href="#pricing">Compare plans</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#top">Acme<span>.</span></a>
+          <p>A minimal landing page template. Plain HTML, CSS, and JS — yours to keep.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#top">About</a></li>
+            <li><a href="#top">Blog</a></li>
+            <li><a href="#cta">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Acme. All rights reserved.</p>
+        <p>Made with plain HTML, CSS &amp; JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
